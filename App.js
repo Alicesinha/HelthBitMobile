@@ -1,11 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>ONEBITHEALTH</Text>
+      <Text>
+        Altura
+      </Text>
+      <TextInput placeholder='Ex: 1.75' keyboardType="numeric" />
+      <Text>
+        Peso
+      </Text>
+      <TextInput placeholder='Ex: 86.300' keyboardType="numeric" />
+      <Button title='Calcular'/>
     </View>
   );
 }
